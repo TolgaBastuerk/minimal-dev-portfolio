@@ -6,7 +6,7 @@ const PortfolioItem = ({ title, imgUrl, imgSource, stack, link }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="border-2 border-stone-900 rounded-md overflow-hidden"
+      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
     >
       <div className="relative">
         <img
@@ -19,12 +19,12 @@ const PortfolioItem = ({ title, imgUrl, imgSource, stack, link }) => {
         </span>
       </div>
       <div className="w-full p-4">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
+        <h3 className="text-lg md:text-xl dark:border-white mb-2 md:mb-3 font-semibold">
           {title}
         </h3>
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm">
+        <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:border-white">
           {stack.map((item) => (
-            <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 rounded-md">
+            <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
               {item}
             </span>
           ))}
