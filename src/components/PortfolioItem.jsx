@@ -2,7 +2,12 @@ import React from "react";
 
 const PortfolioItem = ({ title, imgUrl, imgSource, stack, link }) => {
   return (
-    <div className="border-2 border-stone-900 rounded-md overflow-hidden">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border-2 border-stone-900 rounded-md overflow-hidden"
+    >
       <div className="relative">
         <img
           src={imgUrl}
@@ -25,7 +30,7 @@ const PortfolioItem = ({ title, imgUrl, imgSource, stack, link }) => {
           ))}
         </p>
       </div>
-    </div>
+    </a>
   );
 };
 
